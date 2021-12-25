@@ -1,0 +1,25 @@
+<div class="header"><button class="backBtn btn btn-dark" (click)="backHome()">Atrás</button></div>
+
+<div class="title">
+    <mat-expansion-panel hideToggle class="animate__animated animate__backInDown">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h1>{{countryName}}</h1>
+            </mat-panel-title>
+            <mat-panel-description style=" margin-top: 15px; ">
+                Show all details
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div style="text-align: center;">
+            <p>Information about {{countryName}}.</p>
+            <svg width="90" height="90">       
+            <image [attr.xlink:href]=countryFlag /> 
+       </svg>
+            <div><b>Position </b><br> <b>Latitud: </b>{{countryPositionLat}} <br> <b>Longitud:</b> {{countryPositionLong}}
+            </div>
+            <p><b>Capital:</b> {{countryCapital}}</p>
+            <p><b>Currency:</b> {{countryCurrency}}</p>
+        </div>
+    </mat-expansion-panel>
+
+</div>

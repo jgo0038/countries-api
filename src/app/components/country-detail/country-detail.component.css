@@ -1,0 +1,24 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header {
+    text-align: right;
+}
+
+.backBtn {
+    margin-top: 10px;
+}
+
+svg {
+    width: 150px;
+    height: 150px;
+}
+
+image {
+    width: 150px;
+    height: 150px;
+}
