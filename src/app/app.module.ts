@@ -21,7 +21,7 @@ import { environment } from '../environments/environment';
     CountryDetailComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
